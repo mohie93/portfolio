@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/%7Bportfolio%7D/static/css/main.72e40c75.chunk.css",
-    "main.js": "/%7Bportfolio%7D/static/js/main.ee3a35be.chunk.js",
-    "main.js.map": "/%7Bportfolio%7D/static/js/main.ee3a35be.chunk.js.map",
-    "runtime-main.js": "/%7Bportfolio%7D/static/js/runtime-main.a79d1824.js",
-    "runtime-main.js.map": "/%7Bportfolio%7D/static/js/runtime-main.a79d1824.js.map",
-    "static/js/2.d764bfed.chunk.js": "/%7Bportfolio%7D/static/js/2.d764bfed.chunk.js",
-    "static/js/2.d764bfed.chunk.js.map": "/%7Bportfolio%7D/static/js/2.d764bfed.chunk.js.map",
-    "index.html": "/%7Bportfolio%7D/index.html",
-    "static/css/main.72e40c75.chunk.css.map": "/%7Bportfolio%7D/static/css/main.72e40c75.chunk.css.map",
-    "static/js/2.d764bfed.chunk.js.LICENSE.txt": "/%7Bportfolio%7D/static/js/2.d764bfed.chunk.js.LICENSE.txt",
-    "static/media/mohie.6689f5a1.jpeg": "/%7Bportfolio%7D/static/media/mohie.6689f5a1.jpeg"
+    "main.css": "/portofolio/static/css/main.72e40c75.chunk.css",
+    "main.js": "/portofolio/static/js/main.ee3a35be.chunk.js",
+    "main.js.map": "/portofolio/static/js/main.ee3a35be.chunk.js.map",
+    "runtime-main.js": "/portofolio/static/js/runtime-main.76e22a68.js",
+    "runtime-main.js.map": "/portofolio/static/js/runtime-main.76e22a68.js.map",
+    "static/js/2.d764bfed.chunk.js": "/portofolio/static/js/2.d764bfed.chunk.js",
+    "static/js/2.d764bfed.chunk.js.map": "/portofolio/static/js/2.d764bfed.chunk.js.map",
+    "index.html": "/portofolio/index.html",
+    "static/css/main.72e40c75.chunk.css.map": "/portofolio/static/css/main.72e40c75.chunk.css.map",
+    "static/js/2.d764bfed.chunk.js.LICENSE.txt": "/portofolio/static/js/2.d764bfed.chunk.js.LICENSE.txt",
+    "static/media/mohie.6689f5a1.jpeg": "/portofolio/static/media/mohie.6689f5a1.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a79d1824.js",
+    "static/js/runtime-main.76e22a68.js",
     "static/js/2.d764bfed.chunk.js",
     "static/css/main.72e40c75.chunk.css",
     "static/js/main.ee3a35be.chunk.js"
