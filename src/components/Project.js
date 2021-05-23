@@ -1,5 +1,5 @@
 function Project() {
-  return <div className={"text-center"}>
+  return <div className={"mt-2 text-center"}>
     <h1>Projects</h1>
   </div>
 }

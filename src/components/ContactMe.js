@@ -1,6 +1,6 @@
 function ContactMe() {
-  return <div className={"text-center"}>
-    <h1>Contact Me.</h1>
+  return <div className={"mt-2 text-center"}>
+    <h1>Contact Me</h1>
   </div>
 }
 
