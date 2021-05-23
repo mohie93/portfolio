@@ -10,10 +10,10 @@ function App() {
       <Navbar/>
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route exact path={"/"} component={Introduction}/>
-          <Route exact path={"/projects"} component={Project}/>
-          <Route exact path={"/experience"} component={Experience}/>
-          <Route exact path={"/contact_me"} component={ContactMe}/>
+          <Route exact path={"/portfolio"} component={Introduction}/>
+          <Route exact path={"/portfolio/projects"} component={Project}/>
+          <Route exact path={"/portfolio/experience"} component={Experience}/>
+          <Route exact path={"/portfolio/contact_me"} component={ContactMe}/>
         </Switch>
       </Router>
     </div>
