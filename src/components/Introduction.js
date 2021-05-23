@@ -6,7 +6,7 @@ function Introduction() {
     <div className={'container-fluid text-capitalize mt-2'}>
       <PersonalImage/>
       <div className={'text-center mt-4'}>
-        <Typist avgTypingDelay={50} cursor={{show: false}}>
+        <Typist avgTypingDelay={75} cursor={{show: false}}>
           <h2>Hello, I'm <strong className={'greeting-color'}>Mohieddin</strong></h2>
         </Typist>
       </div>
