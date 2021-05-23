@@ -39,11 +39,31 @@
     border: 5px solid #A6C6CD;
 }
 
+.personal-image {
+    vertical-align: middle;
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #A6C6CD;
+}
+
 .personal-image:hover {
-    border: 8px solid #264753;
+    border: 6px solid #264753;
     cursor: pointer;
 }
 
 .navbar-light {
     color: aliceblue !important;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .personal-image {
+        width: 200px;
+        height: auto;
+    }
 }
