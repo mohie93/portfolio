@@ -1,4 +1,4 @@
-import '../assets/styles/404.css';
+import '../../assets/styles/404.css';
 
 function NoMatch() {
   return <div className="error-content">

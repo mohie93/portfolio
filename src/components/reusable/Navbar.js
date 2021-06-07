@@ -1,8 +1,8 @@
+import {Link} from 'react-router-dom'
 function Navbar() {
   return <nav className="navbar navbar-expand-lg navbar-light navbar-background-color navbar-text">
-    <div className="container-fluid ">
-      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a className="navbar-brand navbar-text" href={"/"}><strong>Home</strong></a>
+    <div className="container-fluid">
+      <Link to={"/index"} className={"navbar-brand navbar-text"}><strong>Mohieddin Tanna</strong></Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"/>
@@ -10,16 +10,13 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ">
           <li className="nav-item ">
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a className="nav-link navbar-text" href={"/projects"}>Projects</a>
+            <Link to={"/projects"} className={"nav-link navbar-text"}>Projects</Link>
           </li>
           <li className="nav-item">
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a className="nav-link navbar-text" href={"/experience"}>Experience</a>
+            <Link to={"/experience"} className={"nav-link navbar-text"}>Work Experience</Link>
           </li>
           <li className="nav-item">
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a className="nav-link navbar-text" href={"/contact_me"}>Contact Me</a>
+            <Link to={"/contact_me"} className={"nav-link navbar-text"}>Contact Me</Link>
           </li>
         </ul>
       </div>

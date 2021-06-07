@@ -33,14 +33,90 @@
 
 .personal-image {
     vertical-align: middle;
-    width: 400px;
+    width: 330px;
     height: auto;
     border-radius: 50%;
     border: 5px solid #A6C6CD;
+    transition: box-shadow 0.7s ease-in-out;
+}
+
+.personal-image:hover {
+    box-shadow: -1px 7px 14px -6px rgba(13, 13, 13, 0.53);
+    -webkit-box-shadow: -1px 7px 14px -6px rgba(13, 13, 13, 0.53);
+    -moz-box-shadow: -1px 7px 14px -6px rgba(13, 13, 13, 0.53);
+    transition: box-shadow 0.7s ease-in-out;
 }
 
 .navbar-light {
     color: aliceblue !important;
+}
+
+.items-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.item {
+    place-self: center;
+    box-shadow: -1px 7px 14px -6px rgba(13, 13, 13, 0.53);
+    -webkit-box-shadow: -1px 7px 14px -6px rgba(13, 13, 13, 0.53);
+    -moz-box-shadow: -1px 7px 14px -6px rgba(13, 13, 13, 0.53);
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 5px;
+}
+
+.item-title {
+    color: #253858;
+}
+
+.btn-trq {
+    background-color: #264753 !important;
+    color: whitesmoke;
+}
+
+.btn-trq:hover {
+    background-color: #264753 !important;
+    color: whitesmoke;
+    cursor: auto !important;
+}
+
+.card {
+    width: 500px;
+    height: 350px;
+}
+
+.social-link {
+    color: #A6C6CD;
+    text-decoration: none;
+    margin-left: 2px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+    color: #264753;
+}
+
+.social-icon {
+    color: #A6C6CD;
+    margin-left: 5px;
+    font-size: 40px;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+    color: #264753;
+}
+
+.contact-me-container {
+    width: 50%;
+    box-shadow: -1px 7px 14px -6px rgba(13, 13, 13, 0.53);
+    -webkit-box-shadow: -1px 7px 14px -6px rgba(13, 13, 13, 0.53);
+    -moz-box-shadow: -1px 7px 14px -6px rgba(13, 13, 13, 0.53);
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -49,8 +125,40 @@
         width: 100%;
     }
 
+    .items-list {
+        padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        gap: 5px;
+        column-gap: 40px;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    .item {
+        vertical-align: middle;
+        horiz-align: center;
+        height: fit-content;
+    }
+
     .personal-image {
         width: 200px;
         height: auto;
+    }
+
+    .card {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .contact-me-container {
+        width: 100%;
+    }
+
+    span{
+        display: block;
     }
 }

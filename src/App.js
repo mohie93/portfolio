@@ -1,19 +1,20 @@
-import {Route, Switch, BrowserRouter as Router} from 'react-router-dom'
-import Navbar from "./components/Navbar";
+import {Route, Switch, Redirect, BrowserRouter as Router} from 'react-router-dom'
+import Navbar from "./components/reusable/Navbar";
 import Introduction from "./components/Introduction";
 import ContactMe from "./components/ContactMe";
 import Experience from "./components/Experience";
 import Project from "./components/Project";
-import NoMatch from "./components/NoMatch";
+import NoMatch from "./components/reusable/NoMatch";
 
 function App() {
 
   return (
-    <div className="App">
-      <Navbar/>
+    <div>
       <Router basename={process.env.PUBLIC_URL}>
+        <Navbar/>
         <Switch>
-          <Route exact path={"/"} component={Introduction}/>
+          <Route exact path={"/"} render= {() => <Redirect to="/index" />}/>
+          <Route exact path={"/index"} component={Introduction}/>
           <Route exact path={"/projects"} component={Project}/>
           <Route exact path={"/experience"} component={Experience}/>
           <Route exact path={"/contact_me"} component={ContactMe}/>
