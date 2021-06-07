@@ -13,7 +13,7 @@ function Navbar() {
             <Link to={"/projects"} className={"nav-link navbar-text"}>Projects</Link>
           </li>
           <li className="nav-item">
-            <Link to={"/experience"} className={"nav-link navbar-text"}>Work Experience</Link>
+            <Link to={"/work_history"} className={"nav-link navbar-text"}>Work History</Link>
           </li>
           <li className="nav-item">
             <Link to={"/contact_me"} className={"nav-link navbar-text"}>Contact Me</Link>

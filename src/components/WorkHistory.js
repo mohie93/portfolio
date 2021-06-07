@@ -59,7 +59,7 @@ const companies = [
   }
 ];
 
-function Experience() {
+function WorkHistory() {
   return <div className={"container-fluid mt-4 items-list text-center text-capitalize"}>
     {
       companies.map((company, index) => (
@@ -88,4 +88,4 @@ function Experience() {
   </div>
 }
 
-export default Experience
+export default WorkHistory
