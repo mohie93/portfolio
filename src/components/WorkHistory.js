@@ -2,12 +2,12 @@ import {motion} from 'framer-motion';
 
 const displayWorkingPeriod = company => {
   if (!company.stillWorkingHere) {
-    return <h5 className="card-subtitle mb-2 text-muted">
+    return <p className="card-subtitle mb-2 text-muted">
       <strong className={"item-title"}>From:</strong> {company.joinedDate}, <strong
-      className={"item-title"}>To:</strong> {company.resignDate} </h5>
+      className={"item-title"}>To:</strong> {company.resignDate} </p>
   } else {
-    return <h5 className="card-subtitle mb-2 text-muted"><strong
-      className={"item-title"}>Since:</strong> {company.joinedDate} </h5>
+    return <p className="card-subtitle mb-2 text-muted"><strong
+      className={"item-title"}>Since:</strong> {company.joinedDate} </p>
   }
 };
 
@@ -65,21 +65,19 @@ function WorkHistory() {
       companies.map((company, index) => (
         <motion.div key={index} className={"item"} whileHover={{scale: 1.02}}>
           <div className="card">
+            <div className="card-header">
+              <strong>{company.name}</strong>
+              <small>{displayWorkingPeriod(company)}</small>
+            </div>
             <div className="card-body">
-              <h4 className="card-title text-center"><strong>{company.name}</strong></h4>
-              {displayWorkingPeriod(company)}
-              <h5 className="card-subtitle mb-2 text-muted"><strong
-                className={"item-title"}>Role:</strong> {company.role}
-              </h5>
-              <h5 className="card-subtitle mb-2 text-muted"><strong className={"item-title"}>Work
-                Type:</strong> {company.workStyle} </h5>
-              <h5 className="card-subtitle mb-2 text-muted text-center mt-4"><strong className={"item-title"}>Tech
-                Stack </strong></h5>
-              <div className="card-title text-center">
-                {company.techStack.split(',').map((item, index) => {
-                  return <span key={index} className="btn bt-sml btn-round btn-trq m-2">{item}</span>
-                })}
-              </div>
+              <blockquote className="blockquote mb-0">
+                <p><strong>Role:</strong> {company.role}</p>
+                <footer className="card-title text-center">
+                  {company.techStack.split(',').map((item, index) => {
+                    return <span key={index} className="btn bt-sml btn-round btn-trq m-2">{item}</span>
+                  })}
+                </footer>
+              </blockquote>
             </div>
           </div>
         </motion.div>
