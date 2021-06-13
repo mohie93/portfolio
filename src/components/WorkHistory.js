@@ -1,13 +1,12 @@
-import {motion} from 'framer-motion';
+// import {motion} from 'framer-motion';
+import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 const displayWorkingPeriod = company => {
   if (!company.stillWorkingHere) {
-    return <p className="card-subtitle mb-2 text-muted">
-      <strong className={"item-title"}>From:</strong> {company.joinedDate}, <strong
-      className={"item-title"}>To:</strong> {company.resignDate} </p>
+    return <small className={"item-title text-white"}>From:{company.joinedDate} To: {company.resignDate} </small>
   } else {
-    return <p className="card-subtitle mb-2 text-muted"><strong
-      className={"item-title"}>Since:</strong> {company.joinedDate} </p>
+    return <small className={"item-title text-white"}>Since:{company.joinedDate}</small>
   }
 };
 
@@ -59,30 +58,39 @@ const companies = [
   }
 ];
 
+function WorkIcon() {
+  return <i className="fa fa-briefcase fa-2x icon-margin" aria-hidden="true"/>
+}
+
 function WorkHistory() {
-  return <div className={"container-fluid mt-4 items-list text-center text-capitalize"}>
-    {
-      companies.map((company, index) => (
-        <motion.div key={index} className={"item"} whileHover={{scale: 1.02}}>
-          <div className="card">
-            <div className="card-header">
-              <strong>{company.name}</strong>
-              <small>{displayWorkingPeriod(company)}</small>
+  return <div className={"text-capitalize"}>
+    <VerticalTimeline>
+      {
+        companies.map((company, index) => (
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{background: '#264753', color: 'white'}}
+            contentArrowStyle={{borderRight: '7px solid  #264753'}}
+            iconStyle={{background: '#A6C6CD', color: 'white'}}
+            icon={<WorkIcon/>}
+            key={index}
+          >
+            <strong
+              className="vertical-timeline-element-title text-white">{company.name} | {displayWorkingPeriod(company)}</strong>
+            <h4 className="vertical-timeline-element-subtitle text-white">{company.role}</h4>
+            <div>
+              <p className="text-white">Tech Stack</p>
+              {
+                company.techStack.split(',').map((item, index) => {
+                  return <span className="badge bg-dark mx-1" key={index}>{item}</span>
+                })
+              }
             </div>
-            <div className="card-body">
-              <blockquote className="blockquote mb-0">
-                <p><strong>Role:</strong> {company.role}</p>
-                <footer className="card-title text-center">
-                  {company.techStack.split(',').map((item, index) => {
-                    return <span key={index} className="btn bt-sml btn-round btn-trq m-2">{item}</span>
-                  })}
-                </footer>
-              </blockquote>
-            </div>
-          </div>
-        </motion.div>
-      ))
-    }
+          </VerticalTimelineElement>
+        ))
+      }
+    </VerticalTimeline>
   </div>
 }
 

@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 function Navbar() {
-  return <nav className="navbar navbar-expand-lg navbar-light navbar-background-color navbar-text">
+  return <nav className="navbar navbar-expand-lg navbar-light navbar-background-color navbar-text sticky-top">
     <div className="container-fluid">
       <Link to={"/index"} className={"navbar-brand navbar-text"}><strong>Mohieddin Tanna</strong></Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

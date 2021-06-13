@@ -15,14 +15,17 @@ function ContactMe() {
     <hr className={"m-auto w-25"}/>
     <div className={"mt-4"}>
       <h1>find me online</h1>
-      <motion.a whileHover={{scale:1.2}} className="social-icon fa fa-linkedin-square" aria-hidden="true"
-         href={"https://www.linkedin.com/in/mohie93/"} target={"_blank"} rel="noreferrer"> </motion.a>
-      <motion.a whileHover={{scale:1.2}} className="social-icon fa fa-twitter-square" aria-hidden="true" href={"https://twitter.com/MohieddinTanna"}
-         target={"_blank"} rel="noreferrer"> </motion.a>
-      <motion.a whileHover={{scale:1.2}} className="social-icon fa fa-github-square" aria-hidden="true" href={"https://github.com/mohie93"}
-         target={"_blank"} rel="noreferrer"> </motion.a>
-      <motion.a whileHover={{scale:1.2}} className="social-icon fa fa-medium" aria-hidden="true" href={"https://medium.com/@mohie93"}
-         target={"_blank"} rel="noreferrer"> </motion.a>
+      <motion.a whileHover={{scale: 1.2}} className="social-icon fa fa-linkedin-square" aria-hidden="true"
+                href={"https://www.linkedin.com/in/mohie93/"} target={"_blank"} rel="noreferrer"/>
+      <motion.a whileHover={{scale: 1.2}} className="social-icon fa fa-twitter-square" aria-hidden="true"
+                href={"https://twitter.com/MohieddinTanna"}
+                target={"_blank"} rel="noreferrer"/>
+      <motion.a whileHover={{scale: 1.2}} className="social-icon fa fa-github-square" aria-hidden="true"
+                href={"https://github.com/mohie93"}
+                target={"_blank"} rel="noreferrer"/>
+      <motion.a whileHover={{scale: 1.2}} className="social-icon fa fa-medium" aria-hidden="true"
+                href={"https://medium.com/@mohie93"}
+                target={"_blank"} rel="noreferrer"/>
     </div>
   </motion.div>
 }
